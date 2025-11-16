@@ -1,0 +1,263 @@
+/* Configurações Globais */
+:root {
+    --cor-primaria: #007BFF; /* Azul para destaque e botões */
+    --cor-secundaria: #28A745; /* Verde para WhatsApp e sucesso */
+    --cor-fundo: #f8f9fa;
+    --cor-texto: #343a40;
+    --cor-fundo-cta: #e9ecef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header (Hero Section) */
+.hero {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.consultor-info {
+    font-size: 1.1em;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Seção de Oferta (Preço) */
+.oferta {
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--cor-fundo-cta);
+    border-bottom: 5px solid var(--cor-secundaria);
+}
+
+.preco-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.titulo-oferta {
+    font-size: 1.2em;
+    color: red;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.preco-principal {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    line-height: 1;
+}
+
+.destaque-preco {
+    font-size: 1.2em; /* Deixa o preço ainda maior */
+    color: var(--cor-primaria);
+}
+
+.sub-preco {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #6c757d;
+}
+
+/* Seção de Benefícios */
+.beneficios {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.beneficios h3 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.beneficios li {
+    background-color: var(--cor-fundo);
+    padding: 15px;
+    border-left: 5px solid var(--cor-secundaria);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1.1em;
+}
+
+/* Botões de Ação (CTA) */
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão do Vídeo */
+.cta-video {
+    text-align: center;
+    padding: 40px 0;
+    background-color: var(--cor-fundo-cta);
+}
+
+.cta-video h3 {
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+}
+
+.btn-video {
+    background-color: #dc3545; /* Vermelho/Youtube */
+    color: white;
+}
+
+.btn-video:hover {
+    background-color: #c82333;
+}
+
+
+/* Seção de Contato e Urgência */
+.contato {
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+.contato h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.urgencia {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.contato-henrique {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin: 20px 0;
+}
+
+.botoes-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    background-color: var(--cor-secundaria);
+    color: white;
+    font-size: 1.2em;
+    max-width: 350px;
+    animation: pulse 1.5s infinite; /* Efeito para chamar a atenção */
+}
+
+.btn-whatsapp:hover {
+    background-color: #1e7e34;
+    animation: none;
+}
+
+/* Botão Instagram */
+.btn-instagram {
+    background-color: #E1306C; /* Cor do Instagram */
+    color: white;
+    max-width: 350px;
+    margin-top: 0; /* Remove a margem extra */
+}
+
+.btn-instagram:hover {
+    background-color: #c135a5;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-texto);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* Animação para o botão de WhatsApp */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+/* Responsividade (Ajustes para telas menores) */
+@media (min-width: 768px) {
+    .botoes-contato {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    .btn {
+        width: auto;
+        max-width: 250px;
+    }
+}
